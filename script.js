@@ -69,6 +69,31 @@ function sort_name()
         }
     }
 }
+// not working
+function sort_id()
+{
+        let tables, rows, sorting, c, a, b, tblsort;
+        tables = document.getElementById("pokemon");
+        sorting = true;
+        while (sorting) {
+            sorting = false;
+            rows = tables.rows;
+            for (c = 1; c < (rows.length - 1); c++) {
+                tblsort = false;
+                a = rows[c].getElementsByTagName("id")[0];
+                b = rows[c + 1].getElementsByTagName("id")[0];
+                if (a.innerHTML.toLowerCase() > b.innerHTML.toLowerCase()) {
+                   tblsort = true;
+                   break;
+                }
+            }
+        if (tblsort) {
+            rows[c].parentNode.insertBefore(rows[c + 1], rows[c]);
+            sorting = true;
+        }
+    }
+}
 get20();
 
 $('#button_name').click(sort_name);
+$('#button_id').click(sort_id);
