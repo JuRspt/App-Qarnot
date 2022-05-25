@@ -1,7 +1,7 @@
 const pokemonItem = ({ id, name, sprites, height, weight, base_experience }) => `
 <tr id="pokemon${id}">
     <td>
-        <p class="text-muted">#${id}</p>
+        <p class="text-muted">${id}</p>
     </td>
     <td>
         <div class="d-flex align-items-center">
