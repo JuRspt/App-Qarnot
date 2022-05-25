@@ -1,3 +1,3 @@
 # App-Qarnot
 
-Qarno's App using Javascript Vanilla, jquery, bootstrap and axios
+App with Pokemon's API using Javascript Vanilla, jquery, bootstrap and axios
